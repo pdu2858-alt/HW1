@@ -4,8 +4,8 @@ This project is an interactive web application built with Streamlit that demonst
 
 ## Demo Site
 
-[Demo Site](https://appapppy-dg4bts84wuqhz6tfoawmwd.streamlit.app/)
-https://appapppy-dg4bts84wuqhz6tfoawmwd.streamlit.app/
+[Demo Site](https://mr9k4baokapjfmrbjkbanu.streamlit.app/)
+https://mr9k4baokapjfmrbjkbanu.streamlit.app/
 
 ## 📋 Features
 
