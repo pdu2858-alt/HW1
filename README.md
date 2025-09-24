@@ -2,11 +2,9 @@
 
 This project is an interactive web application built with Streamlit that demonstrates the principles of simple linear regression. It allows users to dynamically adjust parameters like slope, noise, and the number of data points to see how they affect the model's fit. The application is structured around the CRISP-DM methodology.
 
-## 🚀 Live Demo
+## DEMO SIDE
 
-The application is deployed on Streamlit Community Cloud. You can access it here: [https://aiotda.streamlit.app/](https://aiotda.streamlit.app/)
-
-*(Note: This is the target deployment link as per the project idea; the actual deployment is managed by the user.)*
+[DEMO SIDE](https://appapppy-dg4bts84wuqhz6tfoawmwd.streamlit.app/)
 
 ## 📋 Features
 
