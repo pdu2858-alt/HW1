@@ -135,7 +135,7 @@ def run_multiple_linear_regression():
     mae_mlr = mean_absolute_error(y, y_pred_mlr)
 
     st.subheader("Feature Selection & Model Coefficients")
-    st.write(f"**Selected Features**: `{selected_features.tolist()}`")
+    st.write(f"**Selected Features**: `{list(selected_features)}`")
     
     coeffs_df = pd.DataFrame({
         'Feature': selected_features,
