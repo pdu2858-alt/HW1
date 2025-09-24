@@ -1,60 +1,47 @@
-# Simple Linear Regression Web App
+# Simple Linear Regression Visualizer
 
-This project is a simple web application that demonstrates linear regression. It is built with Flask and follows the CRISP-DM methodology.
+This project is an interactive web application built with Streamlit that demonstrates the principles of simple linear regression. It allows users to dynamically adjust parameters like slope, noise, and the number of data points to see how they affect the model's fit. The application is structured around the CRISP-DM methodology.
 
-## Project Structure
+## 🚀 Live Demo
 
-```
-hw1/
-├── app.py              # Main Flask application file
-├── templates/
-│   └── index.html      # HTML template for the web interface
-├── requirements.txt    # Python dependencies
-├── idea.md             # Initial idea and requirements
-├── log.md              # Log of activities
-└── README.md           # This file
-```
+The application is deployed on Streamlit Community Cloud. You can access it here: [https://aiotda.streamlit.app/](https://aiotda.streamlit.app/)
 
-## How to Run the Application
+*(Note: This is the target deployment link as per the project idea; the actual deployment is managed by the user.)*
 
-1. **Install dependencies:**
+## 📋 Features
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+- **Interactive Controls**: Use sliders to adjust the true slope (`a`), noise level, and number of data points.
+- **Real-time Visualization**: The plot instantly updates to show the new data points, the "true" underlying line, and the fitted regression line.
+- **Model Evaluation**: The learned slope and intercept from the `scikit-learn` model are displayed and updated in real-time.
+- **CRISP-DM Framework**: The interface explains how each step of the CRISP-DM process applies to this modeling task.
 
-2. **Run the Flask application:**
+## 🛠️ Technologies Used
 
-   ```bash
-   python app.py
-   ```
+- **Python**: The core programming language.
+- **Streamlit**: For creating the interactive web application.
+- **Scikit-learn**: For training the linear regression model.
+- **NumPy**: For numerical operations and data generation.
+- **Matplotlib & Seaborn**: For data visualization.
 
-3. **Open your web browser and go to:**
+## ⚙️ How to Run the Application Locally
 
-   [http://127.0.0.1:5000](http://127.0.0.1:5000)
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/pdu2858-alt/HW1.git
+    cd HW1
+    ```
 
-## Code Explanation
+2.  **Install dependencies:**
+    Make sure you have Python installed. Then, install the required packages using pip.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-### `app.py`
+3.  **Run the Streamlit application:**
+    ```bash
+    streamlit run app.py
+    ```
 
-This file contains the main Flask application. Here's a breakdown of the code:
+4.  **Open your web browser:**
+    The application should automatically open in a new tab. If not, navigate to the local URL provided in your terminal (usually `http://localhost:8501`).
 
-- **Imports:** Necessary libraries like Flask, NumPy, Scikit-learn, and Matplotlib are imported.
-- **`generate_data(n_points, a, noise)`:** This function generates synthetic data for the linear regression model. It creates `X` and `y` values based on the user's input for the number of points, slope `a`, and noise level.
-- **`train_model(X, y)`:** This function takes the generated data and trains a simple linear regression model using Scikit-learn.
-- **`create_plot(X, y, model, a, n_points, noise)`:** This function generates a plot that visualizes the data points, the true underlying line, and the fitted regression line. The plot is saved to a memory buffer and encoded in Base64 to be displayed on the web page.
-- **`index()`:** This is the main view function that handles both GET and POST requests. 
-    - On a GET request, it displays the page with default values.
-    - On a POST request, it gets the user's input from the form, generates new data, retrains the model, and re-renders the page with the updated plot and results.
-- **CRISP-DM:** The `index` function is structured to follow the CRISP-DM steps:
-    - **Data Preparation:** `generate_data` is called.
-    - **Modeling:** `train_model` is called.
-    - **Evaluation:** `create_plot` is called, and the model's coefficients are displayed.
-
-### `templates/index.html`
-
-This is the HTML template for the web interface. It uses a simple layout with controls for the user to modify the parameters and a section to display the results.
-
-- **Controls:** The form allows the user to adjust the slope `a`, noise level, and the number of data points using sliders.
-- **CRISP-DM Steps:** The CRISP-DM process is explained in a list.
-- **Results:** The generated plot is displayed, along with the learned slope and intercept of the regression model.
