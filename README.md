@@ -2,9 +2,10 @@
 
 This project is an interactive web application built with Streamlit that demonstrates the principles of simple linear regression. It allows users to dynamically adjust parameters like slope, noise, and the number of data points to see how they affect the model's fit. The application is structured around the CRISP-DM methodology.
 
-## DEMO SIDE
+## Demo Site
 
-[DEMO SIDE](https://appapppy-dg4bts84wuqhz6tfoawmwd.streamlit.app/)
+[Demo Site](https://appapppy-dg4bts84wuqhz6tfoawmwd.streamlit.app/)
+https://appapppy-dg4bts84wuqhz6tfoawmwd.streamlit.app/
 
 ## 📋 Features
 
