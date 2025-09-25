@@ -116,8 +116,11 @@ write python to solve simple linear regression problem, following CRISP-DM steps
 #### User Prompt: "4.如何在vscode叫出終端機與連接gemini cli"
 - **AI Action**: Explained how to open the terminal in VS Code and connect/use Gemini CLI.
 
-#### User Prompt: "5.在vscode的程式如何push到github"
+#### User Prompt: "5.根據我貼的需求，生成整個符合這個需求的專案，並且以網址當中的github專案為標準"
+- **AI Action**: This prompt likely initiated the current project generation process, where the AI was tasked with creating a project based on user requirements and a GitHub project as a reference.
+
+#### User Prompt: "6.如何在vscode的程式如何push到github"
 - **AI Action**: Provided instructions on how to push code to GitHub from VS Code (using Git commands or VS Code's Git integration).
 
-#### User Prompt: "6.streamlit的github URL要去哪裡取得"
+#### User Prompt: "7.streamlit的github URL要去哪裡取得"
 - **AI Action**: Explained how to find the GitHub URL for a Streamlit app (usually the repository where the app's code resides).
