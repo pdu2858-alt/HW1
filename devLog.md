@@ -101,3 +101,23 @@ write python to solve simple linear regression problem, following CRISP-DM steps
     - Wrote content to `devLog.md`.
     - Deleted old `log.md`.
     - Committed and pushed changes to GitHub.
+
+### Additional AI Interactions (Gemini CLI Setup & Related Queries)
+
+#### User Prompt: "1.安裝gemini cli在win11系統的教學"
+- **AI Action**: Provided instructions for installing Gemini CLI on Windows 11.
+
+#### User Prompt: "2.在cmd輸入npm install -g @google/gemini-cli一直轉圈解法"
+- **AI Action**: Provided troubleshooting steps for `npm install` hanging issues.
+
+#### User Prompt: "3.給我完整cmd指令以下載gemini-cli"
+- **AI Action**: Provided the complete `npm install -g @google/gemini-cli` command.
+
+#### User Prompt: "4.如何在vscode叫出終端機與連接gemini cli"
+- **AI Action**: Explained how to open the terminal in VS Code and connect/use Gemini CLI.
+
+#### User Prompt: "5.在vscode的程式如何push到github"
+- **AI Action**: Provided instructions on how to push code to GitHub from VS Code (using Git commands or VS Code's Git integration).
+
+#### User Prompt: "6.streamlit的github URL要去哪裡取得"
+- **AI Action**: Explained how to find the GitHub URL for a Streamlit app (usually the repository where the app's code resides).
